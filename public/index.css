@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #404040;
+    background-color: #f5fafa;
+    font-size: large;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    gap: 3em;
+}
+
+#date-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+main {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    background-color: #fafafa;
+    border: none;
+    box-shadow: 1px 2px 3px 0px #dddddd;
+    font-size: large;
+    font-family: inherit;
+    padding: 5px;
+}
+
+input:focus {
+    outline: 3px solid #B3D3E8;
+}
+
+#add-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+#add {
+    font-size: large;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+    background-color: #d1956e;
+    padding: 5px 8px;
+    box-shadow: 1px 2px 3px 0px #dddddd;
+    cursor: pointer;
+}
+
+#show {
+    margin-top: 3em;
+    font-size: small;
+}
+
+#filter-completed, #filter-todo, #filter-all, #clear-completed {
+    border: none;
+    background-color: inherit;
+    color: #d1956e;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#filter-completed:hover, #filter-todo:hover, #filter-all:hover {
+    text-decoration: underline;
+}
+ 
+#clear-completed-div {
+    text-align: right;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 1em;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 12px 0px #dddddd;
+    margin: 10px;
+    color: black;
+    background-color: #B3D3E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+    cursor: pointer;
+}
+
+.delete {
+    width: 22px;
+    height: auto;
+}
+
+.deleteButton {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+footer {
+    background-color: #404040;
+    padding: 1px 10px 1px 1px;
+    text-align: right;
+    font-size: 13px;
+}
+
+footer a {
+    color: #696969;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #8F8F8F;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+      margin: 0 2vw;
+    }
+    header {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
