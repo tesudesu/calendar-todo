@@ -1,9 +1,13 @@
-# Calendar Todo
+## Calendar Todo
 
-Twist of the classic todo list. Can set a different todo list for different dates, all stored in the local browser.
+Web application: https://calendar-todo.onrender.com
 
-Technologies used: HTML, vanilla CSS, vanilla TypeScript, webpack
+Twist of the classic todo list. Set different todo lists for different dates, all stored in the local browser in the current session.
 
-### Attribution
+Technologies: HTML, vanilla CSS, vanilla TypeScript, webpack
 
-Delete icon from Google Fonts Icons
+Delete icon from Google Fonts.
+
+Designed and coded by me :smiley_cat:
+
+All rights reserved.
